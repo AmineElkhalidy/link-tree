@@ -1,126 +1,88 @@
-[debug] [2024-01-11T09:48:09.680Z] ----------------------------------------------------------------------
-[debug] [2024-01-11T09:48:09.685Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
-[debug] [2024-01-11T09:48:09.686Z] CLI Version:   13.0.3
-[debug] [2024-01-11T09:48:09.687Z] Platform:      win32
-[debug] [2024-01-11T09:48:09.687Z] Node Version:  v18.18.0
-[debug] [2024-01-11T09:48:09.689Z] Time:          Thu Jan 11 2024 10:48:09 GMT+0100 (GMT+01:00)
-[debug] [2024-01-11T09:48:09.690Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T10:57:38.488Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T10:57:38.490Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy -f
+[debug] [2024-01-11T10:57:38.490Z] CLI Version:   13.0.3
+[debug] [2024-01-11T10:57:38.491Z] Platform:      win32
+[debug] [2024-01-11T10:57:38.491Z] Node Version:  v18.18.0
+[debug] [2024-01-11T10:57:38.492Z] Time:          Thu Jan 11 2024 11:57:38 GMT+0100 (GMT+01:00)
+[debug] [2024-01-11T10:57:38.492Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-01-11T09:48:09.914Z] Object ".hosting.frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"maxInstance"}
-[debug] [2024-01-11T09:48:09.915Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
-[debug] [2024-01-11T09:48:09.915Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
-[debug] [2024-01-11T09:48:09.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-01-11T09:48:09.923Z] > authorizing via signed-in user (a.amineelkhalidy@gmail.com)
-[debug] [2024-01-11T09:48:09.925Z] Object ".hosting.frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"maxInstance"}
-[debug] [2024-01-11T09:48:09.925Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
-[debug] [2024-01-11T09:48:09.926Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2024-01-11T10:57:38.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-11T10:57:38.560Z] > authorizing via signed-in user (a.amineelkhalidy@gmail.com)
+[debug] [2024-01-11T10:57:38.560Z] [iam] checking project link-tree-47f84 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-11T10:57:38.562Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions [none]
+[debug] [2024-01-11T10:57:38.562Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions x-goog-quota-user=projects/link-tree-47f84
+[debug] [2024-01-11T10:57:38.562Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T10:57:39.394Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions 200
+[debug] [2024-01-11T10:57:39.395Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T10:57:39.396Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
+[debug] [2024-01-11T10:57:39.765Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
+[debug] [2024-01-11T10:57:39.765Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
+[debug] [2024-01-11T10:57:43.671Z] defaultcredentials: writing to file C:\Users\amine\AppData\Roaming\firebase\a_amineelkhalidy_gmail.com_application_default_credentials.json
+[debug] [2024-01-11T10:57:43.673Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites pageToken=&pageSize=10
+[debug] [2024-01-11T10:57:44.879Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites 200
+[debug] [2024-01-11T10:57:44.879Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites {"sites":[{"name":"projects/link-tree-47f84/sites/link-tree-47f84","defaultUrl":"https://link-tree-47f84.web.app","appId":"1:580180879535:web:6603e2068de6e69d664c5a","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-11T10:57:44.880Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config [none]
+[debug] [2024-01-11T10:57:45.540Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config 200
+[debug] [2024-01-11T10:57:45.540Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config {"projectId":"link-tree-47f84","appId":"1:580180879535:web:6603e2068de6e69d664c5a","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central","apiKey":"AIzaSyAK0o5ZohFJiZk-eF6wHMgFFyoemMOPGeE","authDomain":"link-tree-47f84.firebaseapp.com","messagingSenderId":"580180879535"}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
 
-You're about to initialize a Firebase project in this directory:
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
 
-  C:\Users\amine\Desktop\Learning\svelte\link-tree
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
 
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-01-11T09:48:16.558Z] > refreshing access token with scopes: []
-[debug] [2024-01-11T09:48:16.562Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-01-11T09:48:16.563Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-11T09:48:16.922Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2024-01-11T09:48:16.923Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-11T09:48:16.984Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2024-01-11T09:48:17.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2024-01-11T09:48:17.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project link-tree-47f84 (linkee) 
-[info] 
-=== Hosting Setup
-[debug] [2024-01-11T09:48:19.280Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
-[debug] [2024-01-11T09:48:19.637Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
-[debug] [2024-01-11T09:48:19.638Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
-[debug] [2024-01-11T09:48:50.226Z] Error: EPERM: operation not permitted, stat 'C:\Users\amine\Desktop\Learning\svelte\link-tree\.svelte-kit\types\src\routes\$types.d.ts'
-    at Object.statSync (node:fs:1690:3)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:98:21)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
-    at walk (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:108:9)
-    at write_all_types (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/write_types/index.js:43:22)
-    at create (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:34:8)
-    at Module.all (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:60:15)
-    at config (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/exports/vite/index.js:325:34)
-    at runConfigHook (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/vite/dist/node/chunks/dep-V3BH7oO1.js:68417:31)
+[debug] [2024-01-11T10:58:04.200Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:372:42)
+    at async deploy (C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
 [error] 
 [error] Error: An unexpected error has occurred.
-[debug] [2024-01-11T09:51:11.551Z] ----------------------------------------------------------------------
-[debug] [2024-01-11T09:51:11.556Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
-[debug] [2024-01-11T09:51:11.557Z] CLI Version:   13.0.3
-[debug] [2024-01-11T09:51:11.558Z] Platform:      win32
-[debug] [2024-01-11T09:51:11.558Z] Node Version:  v18.18.0
-[debug] [2024-01-11T09:51:11.560Z] Time:          Thu Jan 11 2024 10:51:11 GMT+0100 (GMT+01:00)
-[debug] [2024-01-11T09:51:11.561Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T10:58:15.646Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T10:58:15.648Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --force
+[debug] [2024-01-11T10:58:15.649Z] CLI Version:   13.0.3
+[debug] [2024-01-11T10:58:15.649Z] Platform:      win32
+[debug] [2024-01-11T10:58:15.649Z] Node Version:  v18.18.0
+[debug] [2024-01-11T10:58:15.650Z] Time:          Thu Jan 11 2024 11:58:15 GMT+0100 (GMT+01:00)
+[debug] [2024-01-11T10:58:15.650Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-01-11T09:51:11.717Z] Object ".hosting.frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"maxInstance"}
-[debug] [2024-01-11T09:51:11.718Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
-[debug] [2024-01-11T09:51:11.718Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
-[debug] [2024-01-11T09:51:11.725Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-01-11T09:51:11.726Z] > authorizing via signed-in user (a.amineelkhalidy@gmail.com)
-[debug] [2024-01-11T09:51:11.727Z] Object ".hosting.frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"maxInstance"}
-[debug] [2024-01-11T09:51:11.727Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
-[debug] [2024-01-11T09:51:11.728Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2024-01-11T10:58:15.719Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-11T10:58:15.720Z] > authorizing via signed-in user (a.amineelkhalidy@gmail.com)
+[debug] [2024-01-11T10:58:15.720Z] [iam] checking project link-tree-47f84 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-11T10:58:15.722Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions [none]
+[debug] [2024-01-11T10:58:15.722Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions x-goog-quota-user=projects/link-tree-47f84
+[debug] [2024-01-11T10:58:15.722Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T10:58:16.566Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions 200
+[debug] [2024-01-11T10:58:16.566Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T10:58:16.569Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
+[debug] [2024-01-11T10:58:17.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
+[debug] [2024-01-11T10:58:17.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
+[debug] [2024-01-11T10:58:21.081Z] defaultcredentials: writing to file C:\Users\amine\AppData\Roaming\firebase\a_amineelkhalidy_gmail.com_application_default_credentials.json
+[debug] [2024-01-11T10:58:21.083Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites pageToken=&pageSize=10
+[debug] [2024-01-11T10:58:22.271Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites 200
+[debug] [2024-01-11T10:58:22.272Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites {"sites":[{"name":"projects/link-tree-47f84/sites/link-tree-47f84","defaultUrl":"https://link-tree-47f84.web.app","appId":"1:580180879535:web:6603e2068de6e69d664c5a","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-11T10:58:22.274Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config [none]
+[debug] [2024-01-11T10:58:23.050Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config 200
+[debug] [2024-01-11T10:58:23.050Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config {"projectId":"link-tree-47f84","appId":"1:580180879535:web:6603e2068de6e69d664c5a","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central","apiKey":"AIzaSyAK0o5ZohFJiZk-eF6wHMgFFyoemMOPGeE","authDomain":"link-tree-47f84.firebaseapp.com","messagingSenderId":"580180879535"}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
 
-You're about to initialize a Firebase project in this directory:
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
 
-  C:\Users\amine\Desktop\Learning\svelte\link-tree
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
 
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-01-11T09:51:14.494Z] Using project from CLI flag: link-tree-47f84
-[debug] [2024-01-11T09:51:14.500Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
-[debug] [2024-01-11T09:51:15.007Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
-[debug] [2024-01-11T09:51:15.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
-[info] i  Using project link-tree-47f84 (linkee) 
-[info] 
-=== Hosting Setup
-[debug] [2024-01-11T09:51:15.064Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
-[debug] [2024-01-11T09:51:15.385Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
-[debug] [2024-01-11T09:51:15.385Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
-[debug] [2024-01-11T09:51:41.125Z] Error: EPERM: operation not permitted, stat 'C:\Users\amine\Desktop\Learning\svelte\link-tree\.svelte-kit\types\src\routes\$types.d.ts'
-    at Object.statSync (node:fs:1690:3)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:98:21)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
-    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
-    at walk (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:108:9)
-    at write_all_types (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/write_types/index.js:43:22)
-    at create (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:34:8)
-    at Module.all (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:60:15)
-    at config (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/exports/vite/index.js:325:34)
-    at runConfigHook (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/vite/dist/node/chunks/dep-V3BH7oO1.js:68417:31)
+[debug] [2024-01-11T10:58:42.028Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:372:42)
+    at async deploy (C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
 [error] 
 [error] Error: An unexpected error has occurred.
