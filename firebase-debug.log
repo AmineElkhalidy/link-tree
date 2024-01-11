@@ -86,3 +86,42 @@
     at async deploy (C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2024-01-11T11:07:16.164Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T11:07:16.167Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-11T11:07:16.168Z] CLI Version:   13.0.3
+[debug] [2024-01-11T11:07:16.168Z] Platform:      win32
+[debug] [2024-01-11T11:07:16.168Z] Node Version:  v18.18.0
+[debug] [2024-01-11T11:07:16.170Z] Time:          Thu Jan 11 2024 12:07:16 GMT+0100 (GMT+01:00)
+[debug] [2024-01-11T11:07:16.170Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-11T11:07:16.309Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-11T11:07:16.309Z] > authorizing via signed-in user (a.amineelkhalidy@gmail.com)
+[debug] [2024-01-11T11:07:16.310Z] [iam] checking project link-tree-47f84 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-11T11:07:16.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions [none]
+[debug] [2024-01-11T11:07:16.313Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions x-goog-quota-user=projects/link-tree-47f84
+[debug] [2024-01-11T11:07:16.313Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T11:07:18.533Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions 200
+[debug] [2024-01-11T11:07:18.533Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/link-tree-47f84:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-11T11:07:18.536Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 [none]
+[debug] [2024-01-11T11:07:20.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 200
+[debug] [2024-01-11T11:07:20.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/link-tree-47f84 {"projectId":"link-tree-47f84","projectNumber":"580180879535","displayName":"linkee","name":"projects/link-tree-47f84","resources":{"hostingSite":"link-tree-47f84","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d7dffdbf-b6bf-45af-ba82-d14a4dc517aa"}
+[debug] [2024-01-11T11:07:26.977Z] defaultcredentials: writing to file C:\Users\amine\AppData\Roaming\firebase\a_amineelkhalidy_gmail.com_application_default_credentials.json
+[debug] [2024-01-11T11:07:26.980Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites pageToken=&pageSize=10
+[debug] [2024-01-11T11:07:29.623Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites 200
+[debug] [2024-01-11T11:07:29.623Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/link-tree-47f84/sites {"sites":[{"name":"projects/link-tree-47f84/sites/link-tree-47f84","defaultUrl":"https://link-tree-47f84.web.app","appId":"1:580180879535:web:6603e2068de6e69d664c5a","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-11T11:07:29.624Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config [none]
+[debug] [2024-01-11T11:07:31.770Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config 200
+[debug] [2024-01-11T11:07:31.770Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:580180879535:web:6603e2068de6e69d664c5a/config {"projectId":"link-tree-47f84","appId":"1:580180879535:web:6603e2068de6e69d664c5a","storageBucket":"link-tree-47f84.appspot.com","locationId":"us-central","apiKey":"AIzaSyAK0o5ZohFJiZk-eF6wHMgFFyoemMOPGeE","authDomain":"link-tree-47f84.firebaseapp.com","messagingSenderId":"580180879535"}
+[debug] [2024-01-11T11:07:46.613Z] Error: EPERM: operation not permitted, stat 'C:\Users\amine\Desktop\Learning\svelte\link-tree\.svelte-kit\types\src\routes\$types.d.ts'
+    at Object.statSync (node:fs:1690:3)
+    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:98:21)
+    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
+    at walk_dir (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:101:5)
+    at walk (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/utils/filesystem.js:108:9)
+    at write_all_types (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/write_types/index.js:43:22)
+    at create (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:34:8)
+    at Module.all (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/core/sync/sync.js:60:15)
+    at config (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/@sveltejs/kit/src/exports/vite/index.js:325:34)
+    at runConfigHook (file:///C:/Users/amine/Desktop/Learning/svelte/link-tree/node_modules/vite/dist/node/chunks/dep-V3BH7oO1.js:68417:31)
+[error] 
+[error] Error: An unexpected error has occurred.
