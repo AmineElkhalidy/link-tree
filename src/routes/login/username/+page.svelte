@@ -21,7 +21,6 @@
     clearTimeout(debounceTimer);
 
     debounceTimer = setTimeout(async () => {
-      console.log("Checking availability of ", username);
       // Get the doc ref
       const ref = doc(db, "usernames", username);
       // Check if it exists
@@ -103,9 +102,7 @@
         {/if}
 
         {#if isValid && isAvailable}
-          <button class="btn btn-success text-white"
-            >Confirm Username @{username}
-          </button>
+          <button class="btn btn-success text-white">Confirm Username</button>
         {/if}
       </div>
     </form>

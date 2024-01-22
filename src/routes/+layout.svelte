@@ -2,7 +2,7 @@
   import "../app.css";
   import { user, userData } from "$lib/firebase";
 
-  // Use them globally
+  // Subscribe to the stores
   $user;
   $userData;
 </script>
