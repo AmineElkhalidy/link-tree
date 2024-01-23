@@ -38,14 +38,8 @@
       username,
       photoURL: $user?.photoURL ?? null,
       published: true,
-      bio: "I am a software developer",
-      links: [
-        {
-          title: "Upwork",
-          url: "https://upwork.com",
-          icon: "custom",
-        },
-      ],
+      bio: "This is the bio, which you can change...",
+      links: [],
     });
 
     // execute the batch

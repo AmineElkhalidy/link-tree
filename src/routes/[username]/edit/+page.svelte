@@ -85,11 +85,6 @@
     <SortableList list={$userData?.links} on:sort={sortList} let:item>
       <div class="group relative">
         <UserLink {...item} />
-        <!-- <button
-          on:click={() => deleteLink(item)}
-          class="btn btn-xs btn-error invisible group-hover:visible transition-all absolute -right-6 bottom-10"
-          >Delete</button
-        > -->
 
         <div class="absolute -top-5 -right-6 invisible group-hover:visible">
           <button class="Btn" on:click={() => deleteLink(item)}>
